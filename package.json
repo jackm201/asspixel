@@ -1,0 +1,15 @@
+{
+  "name": "asspixel-ws-proxy",
+  "version": "1.0.0",
+  "description": "WebSocket proxy for forwarding to mc.asspixel.net",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
