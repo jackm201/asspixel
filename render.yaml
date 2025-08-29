@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: asspixel-ws-proxy
+    env: node
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    # Render will set the PORT env var automatically
+    # No additional env vars required for basic proxy
+    envVars:
+      - key: NODE_ENV
+        value: production
